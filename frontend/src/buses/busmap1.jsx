@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import { useToast } from '@chakra-ui/react';
+import { Flex, Spinner, useToast } from '@chakra-ui/react';
 
 
 delete L.Icon.Default.prototype._getIconUrl;
@@ -74,9 +74,10 @@ const LeafletMapComponent = () => {
 }
 {
     !position && 
-    <h1>
-        Loading...
-    </h1>
+    <Flex w={'full'} justifyContent={'center'} h={'120px'}
+    alignItems={'center'} >
+      <Spinner/>
+    </Flex>
 }
     </div> 
   );

@@ -1,6 +1,5 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
-import MapIframe from './busmap'
 import LeafletMapComponent from './busmap1'
 
 const Busmain = () => {

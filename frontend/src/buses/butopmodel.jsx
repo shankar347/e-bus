@@ -104,7 +104,7 @@ const Butopmodel = ({bus}) => {
     </Text>
          -
        <Text>
-        { bus?.route?.destination.length > 8 ? bus?.route?.destination.slice(0,8) + '...'
+        { bus?.route?.destination.length > 5 ? bus?.route?.destination.slice(0,5) + '...'
         : bus?.route?.destination }
         </Text>   
       
